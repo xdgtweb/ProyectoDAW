@@ -1,0 +1,86 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 1 oct 2022, 16:17:01
+    Author     : xxxdd
+*/
+
+body
+{
+    background: #cfd3ff;
+}
+
+body #contenido main /* define el contenido fotos h1 h2.. */
+{
+    left: 300px;
+    top: 10px;
+    font-size: 0;
+    text-align: center;
+    margin-left: 300px;
+    margin-top: 10px;
+    margin-right: 10px;
+/*    width: 100%; DA PROBLEMAS, NO HACE EL MARGIN RIGHT*/ 
+    height: 100%;
+    background: red;
+}
+
+body #contenido main h1
+{
+    color: red;
+    font-size: 20px;
+    font-family: navegacion;
+}
+
+body #contenido main img
+{
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 450px; 
+    height: 250px;
+}
+
+@media only screen and (max-width: 820px)
+{
+    body #contenido main /* define el contenido fotos h1 h2.. */
+    {
+        left: 300px;
+        top: 10px;
+        font-size: 0;
+        text-align: center;
+        margin-left: 70px;
+        margin-top: 10px;
+        margin-right: 10px;
+        /*    width: 100%; DA PROBLEMAS, NO HACE EL MARGIN RIGHT*/
+        height: 100%;
+        background: red;
+    }
+}
+
+@media only screen and (max-width: 590px)
+{
+    body #contenido main /* define el contenido fotos h1 h2.. */
+    {
+        left: 300px;
+        top: 10px;
+        font-size: 0;
+        text-align: center;
+        margin-left: 10px;
+        margin-top: 58px;
+        margin-right: 10px;
+        /*    width: 100%; DA PROBLEMAS, NO HACE EL MARGIN RIGHT*/
+        height: 100%;
+        background: blue;
+    }
+    
+    body #contenido main img
+    {
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 250px;
+        height: 150px;
+    }
+}

@@ -1,0 +1,884 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 30 sept 2022, 12:51:51
+    Author     : xxxdd
+*/
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body #menu
+{
+    position: fixed;
+    width: 280px;
+    height: 100vh;
+    padding: 10px;
+    background: #212529;
+    font-size: 0.65em;
+
+}
+
+body #rinconIzquierdaAbajo1
+{
+    left: 300px;
+    bottom: 10px;
+    position: absolute;
+    background: #212529;
+    width: 30px;
+    height: 30px;
+}
+
+body #rinconIzquierdaArriba1
+{
+    left: 300px;
+    top: 10px;
+    position: absolute;
+    background: #212529;
+    width: 30px;
+    height: 30px;
+}
+
+body #rinconIzquierdaAbajo2
+{
+    left: 300px;
+    bottom: 10px;
+    position: absolute;
+    background: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 0px 0px 0px 30px;
+}
+
+body #rinconIzquierdaArriba2
+{
+    top: 10px;
+    left: 300px; /* 300*/
+    position: absolute;
+    background: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px 0px 0px 0px;
+}
+
+body #rinconDerechaAbajo1
+{
+    right: 0px;
+    bottom: 10px;
+    right: 10px;
+    position: absolute;
+    background: #212529;
+    width: 30px;
+    height: 30px;
+}
+
+body #rinconDerechaArriba1
+{
+    right: 0px;
+    top: 10px;
+    right: 10px;
+    position: absolute;
+    background: #212529;
+    width: 30px;
+    height: 30px;
+}
+
+body #rinconDerechaAbajo2
+{
+    right: 10px;
+    bottom: 10px;
+    position: absolute;
+    background: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 0px 0px 30px 0px;
+}
+
+body #rinconDerechaArriba2
+{
+    right: 10px;
+    top: 10px;
+    position: absolute;
+    background: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 0px 30px 0px 0px;
+}
+
+body #margenAbajo
+{
+    background: #212529;
+    bottom: 0px;
+    width: 100%;
+    height: 10px;
+    position: fixed;
+}
+
+body #margenArriba
+{
+    background: #212529;
+    top: 0px;
+    width: 100%;
+    height: 10px;
+    position: fixed;
+}
+
+body #margenDerecha
+{
+    background: #212529;
+    right: 0px;
+    width: 10px;
+    height: 100%;
+    position: fixed;
+}
+
+body #menu #lista
+{
+
+}
+
+body #menu #lista img
+{
+    width: 25px;
+    height: 25px;
+}
+
+body #menu #lista #logoLista img
+{
+    width: 0px;
+    height: 0px;
+}
+
+body #menu header
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+body #menu #linea
+{
+    border-bottom: 0.1px #ffffff solid;
+    margin-top: 10px;
+}
+
+body #menu header .logo
+{
+    display: flex;
+}
+
+body #menu header .logo img
+{
+    width: 50px;
+    height: 58px;
+}
+
+body #menu header .titulo
+{
+    color: #ffffff;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    font-size: 30px;
+    font-family: titulo;
+    padding-left: 25px;
+    letter-spacing: 0;
+    text-shadow: 0 0 80px rgba(255, 255, 255, .5);
+    background: url(../Imagenes/Claros/menu/cabecera/fondoTituloTransicion.png) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 50s linear infinite;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+}
+
+body #menu nav
+{
+    
+}
+
+body #menu #lista nav ul
+{
+    list-style: none;
+}
+
+body #menu #lista nav ul li
+{
+    
+}
+
+body #menu #lista nav ul li a
+{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: navegacion;
+    margin-left: 10px;
+}
+
+body #menu #lista nav .imgNavTitulo
+{
+    padding-left: 13px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 7px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+body #menu #lista nav .imgNavTitulo:hover
+{
+    padding-left: 20px;
+    background-color: #0d6efd;
+    border-radius: 7px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+body #menu #lista footer
+{
+    position: fixed;
+    bottom: 10px;
+}
+
+body #menu #lista footer h4
+{
+    color: white;
+    font-size: 12px;
+    font-family: navegacion;
+    margin-bottom: 10px;
+    margin-left: 8px;
+}
+
+body #menu #lista footer #redesSociales a
+{
+    text-decoration: none;
+    border-radius: 7px;
+    width: 35px;
+    height: 35px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body #menu #lista footer #redesSociales a:hover
+{
+    background: #ff3232;
+}
+
+body #menu #lista footer #redesSociales a img
+{
+    width: 25px; 
+    height: 25px;
+}
+
+@font-face 
+{
+    font-family: titulo;
+    font-style: normal;
+    font-weight: normal;
+    src: url(../TiposDeLetra/GiantRobotArmy-Medium.ttf);
+}
+
+@font-face 
+{
+    font-family: navegacion;
+    font-style: normal;
+    font-weight: normal;
+    src: url(../TiposDeLetra/MADEOkineSansPERSONALUSE-Light.otf);
+}
+
+/* TRANSICION FONDO TITULO */
+@-webkit-keyframes aitf 
+{
+	0% {
+		background-position: 0% 50%;
+	}
+
+	100% {
+		background-position: 100% 50%;
+	}
+}
+
+@media only screen and (max-width: 820px)
+{
+    body #menu header .titulo
+    {
+        font-size: 11px;
+        margin-left: 0px;
+        margin-top: 10px;
+        padding-left: 0px;
+        background: white;
+        -webkit-background-clip: text;
+    }
+
+    body #menu
+    {
+        position: fixed;
+        width: 50px;
+        height: 100vh;
+        padding: 10px;
+        background: #212529;
+        font-size: 0.65em;
+
+    }
+    
+    body #menu header
+    {
+        position: relative;
+        display: inline-grid;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    body #menu header .logo img
+    {
+        width: 50px;
+        height: 58px;
+        letter-spacing: 0;
+        text-shadow: 0 0 80px rgba(255, 255, 255, .5);
+        background: url(../Imagenes/Claros/menu/cabecera/fondoTituloTransicion.png) repeat-y;
+        -webkit-background-clip: text;
+        background-clip: border-box;
+        -webkit-text-fill-color: transparent;
+        -webkit-animation: aitf 50s linear infinite;
+        -webkit-transform: translate3d(0, 0, 0);
+        -webkit-backface-visibility: hidden;
+        content: url(../Imagenes/Claros/menu/cabecera/logoTransparente.png);
+    }
+    
+    body #menu #lista
+    {
+        
+    }
+    
+    body #menu #lista nav img
+    {
+        width: 25px;
+        height: 25px;
+    }
+
+    body #menu #lista nav #logoLista img
+    {
+        width: 0px;
+        height: 0px;
+    }
+
+    body #rinconIzquierdaAbajo1
+    {
+        left: 70px;
+        bottom: 10px;
+        position: absolute;
+        background: #212529;
+        width: 30px;
+        height: 30px;
+    }
+
+    body #rinconIzquierdaArriba1
+    {
+        left: 70px;
+        top: 10px;
+        position: absolute;
+        background: #212529;
+        width: 30px;
+        height: 30px;
+    }
+
+    body #rinconIzquierdaAbajo2
+    {
+        left: 70px;
+        bottom: 10px;
+        position: absolute;
+        background: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 0px 0px 0px 30px;
+    }
+
+    body #rinconIzquierdaArriba2
+    {
+        top: 10px;
+        left: 70px; /* 300*/
+        position: absolute;
+        background: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px 0px 0px 0px;
+    }
+
+    body #rinconDerechaAbajo1
+    {
+        right: 0px;
+        bottom: 10px;
+        right: 10px;
+        position: absolute;
+        background: #212529;
+        width: 30px;
+        height: 30px;
+    }
+
+    body #rinconDerechaArriba1
+    {
+        right: 0px;
+        top: 10px;
+        right: 10px;
+        position: absolute;
+        background: #212529;
+        width: 30px;
+        height: 30px;
+    }
+
+    body #rinconDerechaAbajo2
+    {
+        right: 10px;
+        bottom: 10px;
+        position: absolute;
+        background: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 0px 0px 30px 0px;
+    }
+
+    body #rinconDerechaArriba2
+    {
+        right: 10px;
+        top: 10px;
+        position: absolute;
+        background: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 0px 30px 0px 0px;
+    }
+    
+    body #menu #lista nav ul li a
+    {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 0px;
+        font-family: navegacion;
+        margin-left: 10px;
+    }
+    
+    body #menu #lista nav .imgNavTitulo
+    {
+        padding-left: 13px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border-radius: 7px;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    body #menu #lista nav .imgNavTitulo:hover
+    {
+        padding-left: 13px;
+        background-color: #0d6efd;
+        border-radius: 7px;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    
+    body #menu #lista footer h4
+    {
+        font-size: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+    
+    body #menu #lista footer #redesSociales
+    {
+        display: inline-grid;
+    }
+    
+    body #menu #lista footer #redesSociales a
+    {
+        text-decoration: none;
+        border-radius: 7px;
+        width: 35px;
+        height: 35px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width: 590px)
+{
+    body #menu header .titulo
+    {
+        font-size: 20px;
+        margin-left: 5px;
+        padding-left: 0px;
+        background: white;
+        -webkit-background-clip: text;
+    }
+
+    body #menu
+    {
+        padding-bottom: 5px;
+        padding-top: 5px;
+        padding-left: 0px;
+        padding-right: 0px;
+        font-size: 0.65em;
+
+        background: #212529;
+        top: 0px;
+        width: 100%;
+        height: 48px;
+        position: absolute;
+    }
+    
+    body #menu header
+    {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    body #menu header .logo
+    {
+        display: flex;
+    }
+
+    body #menu header .logo img
+    {
+        width: 40px;
+        height: 48px;
+        margin-right: 5px;
+        letter-spacing: 0;
+        text-shadow: 0 0 80px rgba(255, 255, 255, .5);
+        background: url(../Imagenes/Claros/menu/cabecera/fondoTituloTransicion.png) repeat-y;
+        -webkit-background-clip: text;
+        background-clip: border-box;
+        -webkit-text-fill-color: transparent;
+        -webkit-animation: aitf 50s linear infinite;
+        -webkit-transform: translate3d(0, 0, 0);
+        -webkit-backface-visibility: hidden;
+        content: url(../Imagenes/Claros/menu/cabecera/logoTransparente.png);
+    }
+    
+    body #menu #linea
+    {
+        border-bottom: 0px;
+        margin-top: 0px;
+    }
+    
+    body #menu #lista
+    {
+        left: 50%;
+        transform: translate(-50%, 0%);
+        /* -webkit-transform: translate(-50%, -50%); */
+        position: fixed;
+        bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 7px;
+        word-wrap: break-word;
+        background-color: #212529;
+        border-radius: 7px;
+        font-size: 0;
+        transition: 0.3s;
+    }
+    
+    body #menu #lista:hover
+    {
+        width: 150px;
+        height: 250px;
+        display: inline-block;
+        transition: 0.3s;
+    }
+    
+    body #menu #lista nav img
+    {
+        width: 0px;
+        height: 0px;
+    }
+
+    body #menu #lista nav #logoLista img
+    {
+        width: 30px;
+        height: 30px;
+    }
+    
+    body #menu #lista:hover nav #logoLista img
+    {
+        width: 0px;
+        height: 0px;
+    }
+    
+    body #menu #lista nav /* controla la navegacion solo */
+    {
+        position: relative;
+    }
+
+    body #rinconIzquierdaAbajo1
+    {
+        left: 10px;
+        bottom: 10px;
+        position: absolute;
+        background: #212529;
+        width: 30px;
+        height: 30px;
+    }
+
+    body #rinconIzquierdaArriba1
+    {
+        left: 10px;
+        top: 58px;
+        position: absolute;
+        background: #212529;
+        width: 30px;
+        height: 30px;
+    }
+
+    body #rinconIzquierdaAbajo2
+    {
+        left: 10px;
+        bottom: 10px;
+        position: absolute;
+        background: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 0px 0px 0px 30px;
+    }
+
+    body #rinconIzquierdaArriba2
+    {
+        top: 58px;
+        left: 10px; /* 300*/
+        position: absolute;
+        background: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px 0px 0px 0px;
+    }
+
+    body #rinconDerechaAbajo1
+    {
+        right: 0px;
+        bottom: 10px;
+        right: 10px;
+        position: absolute;
+        background: #212529;
+        width: 30px;
+        height: 30px;
+    }
+
+    body #rinconDerechaArriba1
+    {
+        right: 10px;
+        top: 58px;
+        right: 10px;
+        position: absolute;
+        background: #212529;
+        width: 30px;
+        height: 30px;
+    }
+
+    body #rinconDerechaAbajo2
+    {
+        right: 10px;
+        bottom: 10px;
+        position: absolute;
+        background: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 0px 0px 30px 0px;
+    }
+
+    body #rinconDerechaArriba2
+    {
+        right: 10px;
+        top: 58px;
+        position: absolute;
+        background: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 0px 30px 0px 0px;
+    }
+    
+    body #margenAbajo
+    {
+        background: #212529;
+        bottom: 0px;
+        width: 100%;
+        height: 10px;
+        position: fixed;
+    }
+
+    body #margenArriba /* ANULADO */
+    {
+        top: 0px;
+        width: 0%;
+        height: 0px;
+    }
+
+    body #margenDerecha
+    {
+        background: #212529;
+        right: 0px;
+        width: 10px;
+        height: 100%;
+        position: fixed;
+    }
+    
+    body #margenIzquierda
+    {
+        background: #212529;
+        left: 0px;
+        width: 10px;
+        height: 100%;
+        position: fixed;
+    }
+    
+    body #menu #lista nav ul li a
+    {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 0px;
+        font-family: navegacion;
+        margin-left: 10px;
+    }
+    
+    body #menu #lista nav .imgNavTitulo
+    {
+        padding-left: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border-radius: 0px;
+        position: relative;
+        display: inline-block;
+        font-size: 0;
+    }
+    
+    body #menu #lista:hover nav .imgNavTitulo
+    {
+        padding-left: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border-radius: 7px;
+        position: relative;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        align-content: center;
+        vertical-align: central;
+    }
+
+    body #menu #lista nav .imgNavTitulo:hover /* este es el hover de dentro de la lista */
+    {
+        padding-left: 0px;
+        background-color: #0d6efd;
+        border-radius: 7px;
+        position: relative;
+        display: block;
+    }
+    
+    body #menu #lista:hover nav .imgNavTitulo img
+    {
+        width: 25px;
+        height: 25px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        transition: 0.3s;
+    }
+
+    body #menu #lista nav .imgNavTitulo ul li a
+    {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 0px;
+        font-family: navegacion;
+        margin-left: 0px;
+    }
+    
+    body #menu #lista:hover nav .imgNavTitulo ul li a
+    {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 14px;
+        font-family: navegacion;
+        margin-left: 0px;
+    }
+    
+    body #menu #lista footer h4
+    {
+        font-size: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+    
+    body #menu #lista:hover footer h4
+    {
+        font-size: 9px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+    
+    body #menu #lista footer #redesSociales
+    {
+        display: none;
+    }
+    
+    body #menu #lista:hover footer #redesSociales
+    {
+        display: inline-block;
+    }
+    
+    body #menu #lista footer #redesSociales a
+    {
+        text-decoration: none;
+        padding: 3px;
+        border-radius: 7px;
+        width: 20px;
+        height: 20px;
+        margin-left: 3.5px;
+        margin-right: 0px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    body #menu #lista footer #redesSociales a:hover
+    {
+        background: #ff3232;
+        padding: 3px;
+    }
+
+    body #menu #lista footer #redesSociales a img
+    {
+        width: 0px;
+        height: 0px;
+    }
+    
+    body #menu #lista:hover footer #redesSociales a img
+    {
+        width: 25px;
+        height: 25px;
+    }
+}
