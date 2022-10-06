@@ -1,1 +1,1 @@
-https://xdgtweb.github.io/ProyectoDAW/index.html
+https://xdgtweb.github.io/ProyectoDAW/public_html/HTML/index.html
